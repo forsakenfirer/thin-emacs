@@ -1,0 +1,21 @@
+* thin-emacs
+** Introduction
+用了几年emacs，各种插件配置折腾得挺多。因为之前的配置加载速度非常慢，最近挺闲的，所以把emacs用use-package重新配置了一遍。有网友想参考一下我的配置方式。但我自己的版本库中有一些个人信息不方便展示。遂在此发布一个精简的版本。去掉了一些个人化的模块。比较快速通用。
+** Install
+*** linux
+#+BEGIN_SRC bash
+# mv custom ~/.emacs.d/
+# mv init.el ~/.emacs.d/
+#+END_SRC
+
+*** windows
+#+BEGIN_SRC bash
+# mv custom ~/.emacs.d/
+# mv init.el ~/AppData/Roaming/.emacs
+#+END_SRC
+
+
+** TODO 功能扩展 [0/3]                                               :config:
+*** TODO 日程管理
+*** TODO 邮件
+*** TODO 加载速度
