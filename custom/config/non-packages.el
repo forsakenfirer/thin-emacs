@@ -8,6 +8,17 @@
   (menu-bar-mode 0)
   )
 
+;;取消滚动条
+(set-scroll-bar-mode nil)
+
+;;设置长和宽
+(set-frame-width (selected-frame) 113)
+(set-frame-height (selected-frame) 40)
+
+;;高亮当前行
+(when (display-graphic-p)
+    (global-hl-line-mode t))
+
 ;; UTF-8 as default encoding
 (prefer-coding-system 'utf-8-unix)
 (set-language-environment "UTF-8")
@@ -78,13 +89,6 @@
 (setq font-lock-maximum-decoration t)
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;;取消滚动条
-(set-scroll-bar-mode nil)
-
-;;设置长和宽
-(set-frame-width (selected-frame) 113)
-(set-frame-height (selected-frame) 40)
-
 ;;关闭当前buffer
 (global-set-key "\C-xk" 'kill-this-buffer)
 
@@ -105,10 +109,6 @@
 
 ;; 支持emacs和外部程序的粘贴
 (setq x-select-enable-clipboard t)
-
-;;高亮当前行
-(when (display-graphic-p)
-    (global-hl-line-mode t))
 
 ;;括号补全
 (electric-pair-mode t)

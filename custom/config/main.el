@@ -1,3 +1,5 @@
+(require 'non-packages)
+
 ;;;packages source setting
 (package-initialize)
 (require 'package)
@@ -9,11 +11,9 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-
 ;;load as needs
 (add-to-list 'load-path "~/.emacs.d/emacs/config")
 (require 'default-packages)
-(require 'non-packages)
 
 (defun load-custom-packages ()
   "load extended plugins."
@@ -22,8 +22,6 @@
   )
 
 (global-set-key [f10] 'load-custom-packages)
-
-
 
 
 
