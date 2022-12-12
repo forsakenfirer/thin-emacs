@@ -93,7 +93,8 @@
 (global-set-key "\C-xk" 'kill-this-buffer)
 
 ;;行号
-(global-set-key (kbd "C-c 0") 'display-line-numbers-mode)
+(global-set-key (kbd "C-c 0") 'linum-mode)
+(setq linum-format "%04d")
 
 ;;自动换行
 (toggle-truncate-lines t)
